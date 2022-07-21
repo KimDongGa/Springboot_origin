@@ -16,6 +16,7 @@ public class TlSampleController {
 		return "/index";
 	}
 
+
 //	@GetMapping("/")
 	public String test(Model model) {
 //		model.addAttribute("hello","서버에서 보내준 값");
