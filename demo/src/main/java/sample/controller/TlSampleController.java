@@ -11,6 +11,7 @@ public class TlSampleController {
 
 	@GetMapping("/")
 	public String hello(Model model) {
+		model.addAttribute("hello","Hello ThymeLeaf Template");
 		model.addAttribute("myName", "ThymeLeaf");
 		return "index";
 	}
