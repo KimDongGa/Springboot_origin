@@ -1,0 +1,16 @@
+<html lang = "ko"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net/n2/thymeleaf/layout">
+
+
+	<meta charset = "UTF-8">
+	<title>Default 레이아웃 페이지 </title>
+
+	<th:block th:replace="fragment/config :: configFragment"></th:block>
+
+	<th:block th:replace="fragment/header :: commonHeader"></th:block>
+
+	<th:block layout:fragment="content"></th:block>
+
+	<th:block th:replace="fragment/footer :: commonFooter"></th:block>
+</html>
