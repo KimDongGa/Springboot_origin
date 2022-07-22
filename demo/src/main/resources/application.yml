@@ -1,3 +1,4 @@
+# spring mvc, devtools, thymeleaf 설정
 spring :
   mvc :
     view :
@@ -8,3 +9,16 @@ spring :
       enabled : true
   thymeleaf : 
     cache : false 
+    
+# mariaDB 설정
+  datasource :
+    driver-class-name : org.mariadb.jdbc.Driver
+    url : jdbc:mariadb://localhost:3306/dbTest?characterEncoding=UTF-8&serverTimezone=UTC
+    username : root
+    password : groot
+
+mybatis:
+  type-aliases-package: com.example.demo.entity
+  mapper-locations: mybatis/**/*.xml    
+    
+      
