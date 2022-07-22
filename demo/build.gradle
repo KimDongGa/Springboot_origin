@@ -19,15 +19,15 @@ repositories {
 }
 
 dependencies {
+	compileOnly 'org.projectlombok:lombok'
+	compileOnly 'org.springframework.boot:spring-boot-configuration-processor'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+
 	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
 	implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	implementation 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect'
 	//implementation 'org.mybatis.spring.boot:mybatis-spring-boot-starter:2.2.2'
-
-	compileOnly 'org.projectlombok:lombok'
-	compileOnly 'org.springframework.boot:spring-boot-configuration-processor'
-	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 
 	annotationProcessor 'org.projectlombok:lombok'
 	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'

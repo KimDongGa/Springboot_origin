@@ -1,4 +1,4 @@
-package sample.controller;
+package com.example.demo.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -9,11 +9,13 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class TlSampleController {
 
-	@GetMapping("/")
+	@GetMapping(value="/hello")
 	public String hello(Model model) {
+		String name = "ThymeLeaf";
+
 		model.addAttribute("hello","Hello ThymeLeaf Template");
-		model.addAttribute("myName", "ThymeLeaf");
-		return "index";
+		model.addAttribute("name", name);
+		return "hello";
 	}
 
 
